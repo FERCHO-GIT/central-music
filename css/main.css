@@ -1,0 +1,658 @@
+@font-face {
+    font-family: 'Work Sans Bold';
+    src: url('../fonts/WorkSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Work Sans SemiBold';
+    src: url('../fonts/WorkSans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Work Sans Medium';
+    src: url('../fonts/WorkSans-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Work Sans Regular';
+    src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Monserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+body {
+    margin: 0;
+}
+.central-music-wrapper {
+    margin: 0 1.6em;
+    position: relative;
+}
+.central-music-header-section {
+    background-image: url('../images/central-music-background-header-movil.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    padding: 3.2em 0;
+}
+.central-music-navigation-content {
+    display: flex;
+    width: 100%;
+}
+.central-music-nav-header {
+    display: none;
+}
+.central-music-navigation-content > div {
+    width: 50%;
+}
+.central-music-logo img {
+    width: 155px;
+}
+.central-music-nav-menu img {
+    height: 24px;
+    width: 24px;
+}
+.central-music-nav {
+    display: flex;
+    justify-content: right;
+}
+.central-music-nav-menu {
+    display: block;
+}
+.central-music-nav-icons {
+    display: none;
+}
+.central-music-hero-content {
+    padding: 8.1em 0;
+}
+.central-music-hero-text {
+    font-family: 'Work Sans Bold';
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 120%;
+    text-align: center;
+}
+.central-music-lesson-call-out {
+    border-radius: 10px 10px;
+    background-color: rgba(171, 4, 51, 1);
+    position: absolute;
+    bottom: -34%;
+    text-align: center;
+    width: 100%;
+    padding: 1.7em 0;
+    z-index: 1;
+}
+.central-music-lesson-call-out::before {
+    content: ' ';
+    background-image: url('../images/central-music-lesson-call-out-background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    border-radius: 10px 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.central-music-lesson-call-out-text h2 {
+    font-family: 'Work Sans Bold';
+    font-size: 21px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 120%;
+    width: 60%;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.central-music-lesson-call-out-text p {
+    font-family: 'Work Sans SemiBold';
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 149%;
+    margin: 1em 0;
+}
+.central-music-lesson-call-out-btn a {
+    background-color: rgba(255, 117, 58, 1);
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Work Sans SemiBold';
+    font-size: 12px;
+    line-height: 130%;
+    padding: 0.6em 1.3em;
+    border-radius: 16px 16px;
+    display: inline-block;
+}
+
+
+.central-music-new-products-section {
+    margin: 10.6em 0 3.1em 0;
+}
+.central-music-new-products-title,
+.central-music-popular-finds-title {
+    position: relative;
+}
+.central-music-new-products-title h3,
+.central-music-popular-finds-title h3 {
+    font-family: 'Work Sans Bold';
+    font-size: 24px;
+    color: rgba(80, 80, 80, 1);
+    text-align: center;
+}
+.central-music-new-products-title h3::before,
+.central-music-popular-finds-title h3::before {
+    content: ' ';
+    position: absolute;
+    width: 80px;
+    background-color: rgba(171, 4, 51, 1);
+    height: 3px;
+    top: -8px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+.central-music-new-products-list,
+.central-music-popular-finds-list {
+    margin: 0.6em 0 1em 0;
+}
+.central-music-product-box {
+    border-radius: 10px 10px 0 0;
+    background: radial-gradient(at top left, rgba(251, 251, 251, 1), rgba(211, 211, 211, 1));
+    box-shadow: 1px 1px 4px rgba(234, 234, 234, 1);
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    z-index: -1;
+}
+.central-music-product-image {
+    position: relative;
+    width: 100%;
+}
+.central-music-product-image img {
+    width: 100%;
+}
+.central-music-product-info {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 4px rgba(234, 234, 234, 1);
+    padding: 0.8em 1.4em;
+}
+.central-music-product-info .product-name,
+.central-music-product-info .product-price {
+    font-family: 'Work Sans Medium';
+    font-size: 20px;
+    color: rgba(37, 37, 37, 1);
+    margin: 0.4em 0;
+}
+.central-music-product-info .product-price {
+    float: right;
+}
+.central-music-product-info .product-desc {
+    font-family: 'Work Sans Medium';
+    font-size: 16px;
+    color: rgba(118, 118, 118, 1);
+    margin: 0.4em 0;
+}
+.central-music-product-info .product-colors {
+    font-family: 'Monserrat';
+    font-size: 12px;
+    color: rgba(80, 80, 80, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+    padding: 2px 6px;
+    border-radius: 20px 20px;
+    display: inline-block;
+    margin: 1.6em 0 1em 0;
+}
+.central-music-product-info .product-colors span {
+    font-weight: 500;
+}
+
+
+.central-music-popular-finds-section {
+    background-color: rgba(236, 236, 236, 1);
+    padding: 2.1em 0 1.2em 0;
+}
+.central-music-popular-finds-list {
+    border-radius: 10px 10px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 5px rgba(234, 234, 234, 1);
+    margin: 1.9em 0;
+}
+.central-music-popular-finds-box {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    z-index: -1;
+}
+.central-music-popular-finds-info {
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.8em 1.4em;
+}
+.central-music-popular-finds-info .product-name,
+.central-music-popular-finds-info .product-price {
+    font-family: 'Work Sans Medium';
+    font-size: 20px;
+    color: rgba(37, 37, 37, 1);
+    margin: 0.4em 0;
+}
+.central-music-popular-finds-info .product-price {
+    float: right;
+}
+.central-music-popular-finds-info .product-desc {
+    font-family: 'Work Sans Medium';
+    font-size: 16px;
+    color: rgba(118, 118, 118, 1);
+    margin: 0.4em 0;
+}
+.central-music-popular-finds-info .product-colors {
+    font-family: 'Monserrat';
+    font-size: 12px;
+    color: rgba(80, 80, 80, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+    padding: 2px 6px;
+    border-radius: 20px 20px;
+    display: inline-block;
+    margin: 1.6em 0 1em 0;
+}
+.central-music-popular-finds-info .product-colors span {
+    font-weight: 500;
+}
+
+
+.central-music-new-products-section-two {
+    margin: 4.6em 0 2.6em 0;
+}
+.central-music-new-products-title-two {
+    position: relative;
+}
+.central-music-new-products-title-two h3 {
+    font-family: 'Work Sans Bold';
+    font-size: 24px;
+    color: rgba(80, 80, 80, 1);
+    text-align: center;
+}
+.central-music-new-products-title-two h3::before {
+    content: ' ';
+    position: absolute;
+    width: 80px;
+    background-color: rgba(171, 4, 51, 1);
+    height: 3px;
+    top: -8px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+.central-music-new-products-list-two {
+    margin: 1.9em 0;
+}
+.grid-column-first {
+    display: none;
+}
+.central-music-new-product-image-two-1 {
+    background-image: url('../images/central-music-newest-product-1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 310px;
+    width: 100%;
+}
+.central-music-new-product-image-two-2 {
+    background-image: url('../images/central-music-newest-product-2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 310px;
+    width: 100%;
+}
+.central-music-new-product-image-two-3 {
+    background-image: url('../images/central-music-newest-product-3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 310px;
+    width: 100%;
+}
+.central-music-new-product-image-two-4 {
+    background-image: url('../images/central-music-newest-product-4.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 310px;
+    width: 100%;
+}
+.central-music-new-product-info-two {
+    padding: 1.1em 1.8em;
+    background-color: rgba(234, 234, 234, 1);
+    border-radius: 0 0 10px 10px;
+}
+.central-music-new-product-info-two .article-title {
+    font-family: 'Monserrat';
+    font-size: 20px;
+    color: rgba(37, 37, 37, 1);
+    margin: 0.6em 0;
+}
+.central-music-new-product-info-two .article-subhead {
+    font-family: 'Monserrat';
+    font-size: 16px;
+    color: rgba(118, 118, 118, 1);
+    margin: 0.6em 0;
+}
+.alternate {
+    background-color: rgba(37, 37, 37, 1) !important;
+}
+.article-title-alternate {
+    color: rgba(234, 234, 234, 1) !important;
+}
+.article-subhead-alternate {
+    color: rgba(196, 196, 196, 1) !important;
+}
+
+
+.central-music-footer-section {
+    margin: 2.6em 0 0 0;
+    background-color: rgba(80, 80, 80, 1);
+}
+.central-music-footer-nav {
+    padding-top: 2.6em;
+}
+.central-music-footer-nav ul::before {
+    content: ' ';
+    position: absolute;
+    width: 58px;
+    background-color: rgba(255, 255, 255, 1);
+    height: 3px;
+    top: -8px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+.central-music-footer-nav ul,
+.central-music-footer-social ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+.central-music-footer-nav ul li,
+.central-music-footer-social ul li {
+    list-style: none;
+    padding: 0.3em 0;
+}
+.central-music-footer-nav:nth-child(2) {
+    display: none;
+}
+.central-music-footer-nav ul li:first-child a {
+    font-family: 'Work Sans Bold';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 130%;
+    text-decoration: none;
+}
+.central-music-footer-nav ul li a {
+    font-family: 'Work Sans Regular';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 130%;
+    text-decoration: none;
+}
+.central-music-footer-logo {
+    display: none;
+}
+.central-music-footer-copy {
+    background-color: rgba(37, 37, 37, 1);
+    text-align: center;
+}
+.central-music-footer-copy p {
+    padding: 0.6em 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Monserrat';
+    font-size: 14px;
+}
+.central-music-footer-social ul {
+    display: flex;
+    padding: 1.3em 0;
+    margin: 0 auto;
+    width: 35%;
+}
+.central-music-footer-social ul li {
+    width: 25%;
+}
+.central-music-footer-social ul li a img {
+    width: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .central-music-wrapper {
+        margin: 0 2.6em;
+    }
+    .central-music-header-section {
+        background-image: url('../images/central-music-background-header-tablet.png');
+        background-position: unset;
+    }
+    .central-music-logo img {
+        width: 255px;
+    }
+    .central-music-hero-content {
+        padding: 7.1em 0 12.1em 0;
+    }
+    .central-music-hero-text {
+        font-size: 42px;
+        text-align: left;
+    }
+    .central-music-lesson-call-out-text h2 {
+        font-size: 34px;
+    }
+    .central-music-lesson-call-out-text p {
+        font-size: 18px;
+    }
+    .central-music-lesson-call-out-btn a {
+        font-size: 14px;
+        padding: 0.6em 1.3em;
+    }
+    .central-music-lesson-call-out {
+        padding: 2em 0;
+        bottom: -32%;
+    }
+
+    .central-music-new-products-section {
+        margin: 12.6em 0 4.1em 0;
+    }
+    .central-music-new-products-title h3,
+    .central-music-popular-finds-title h3 {
+        font-size: 40px;
+    }
+    .central-music-new-products-list, .central-music-popular-finds-list {
+        margin: 0;
+    }
+    .central-music-new-products-general-two {
+        display: grid;
+    }
+    .central-music-new-products-container,
+    .central-music-popular-finds-container,
+    .central-music-new-products-container-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    .central-music-new-products-list:last-child {
+        display: block;
+    }
+    .central-music-popular-finds-list:last-child {
+        display: block;
+    }
+    .central-music-popular-finds-section {
+        padding: 2.1em 0 4.1em 0;
+    }
+    .grid-div {
+        order: -1;
+    }
+
+    .central-music-new-products-title-two h3 {
+        font-size: 40px;
+        margin: 1em 0 0.6em 0;
+    }
+    .central-music-new-products-list-two {
+        margin: 1.3em 0 0 0;
+    }
+
+    .central-music-footer-navigation {
+        display: flex;
+        padding: 3.8em 0 2.8em 0;
+        width: 100%;
+    }
+    .central-music-footer-navigation > div {
+        width: 30%;
+    }
+    .central-music-footer-navigation > div:last-child {
+        width: 40%;
+    }
+    .central-music-footer-nav:nth-child(2) {
+        display: block;
+    }
+    .central-music-footer-nav ul li {
+        text-align: left;
+    }
+    .central-music-footer-nav ul::before {
+        margin-inline: 0;
+    }
+    .central-music-footer-nav {
+        padding-top: 0;
+    }
+    .central-music-footer-social {
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        margin-top: auto;
+    }
+    .central-music-footer-nav-social {
+        display: flex;
+        justify-content: right;
+    }
+    .central-music-footer-nav-social ul {
+        padding: 1.3em 0 0 0;
+        margin: 0;
+        width: 45%;
+    }
+    .central-music-footer-logo {
+        display: block;
+    }
+    .central-music-footer-social .central-music-footer-logo img {
+        width: 255px;
+    }
+    .central-music-footer-copy p {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .central-music-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .central-music-hero-content {
+        padding: 10.6em 0 15.1em 0;
+    }
+    .central-music-header-section {
+        background-image: url('../images/central-music-background-header-desktop.png');
+    }
+    .central-music-hero-text {
+        font-size: 56px;
+    }
+    .central-music-logo {
+        width: 30% !important;
+    }
+    .central-music-nav {
+        width: 10% !important;
+    }
+    .central-music-nav-header {
+        display: block;
+        width: 60% !important;
+    }
+    .central-music-nav-header ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .central-music-nav-header ul li {
+        list-style: none;
+        padding: 1em 1em;
+    }
+    .central-music-nav-header ul li a {
+        font-family: 'Work Sans SemiBold';
+        font-size: 18px;
+        color: rgba(252, 252, 252, 1);
+        line-height: 130%;
+        text-decoration: none;
+    }
+    .central-music-nav-menu {
+        display: none;
+    }
+    .central-music-nav-icons {
+        display: block;
+    }
+    .central-music-nav-icons ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 23px;
+    }
+    .central-music-nav-icons ul li {
+        list-style: none;
+    }
+    .central-music-nav-icons ul li a img {
+        width: 24px;
+    }
+    .central-music-lesson-call-out {
+        bottom: -27%;
+    }
+    .central-music-lesson-call-out-text h2 {
+        font-size: 46px;
+    }
+    .central-music-lesson-call-out-text p {
+        font-size: 24px;
+    }
+    
+
+    .central-music-new-products-section {
+        margin: 14.6em 0 4.1em 0;
+    }
+    .central-music-new-products-container,
+    .central-music-popular-finds-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .central-music-new-products-list:last-child {
+        display: none;
+    }
+    .central-music-popular-finds-list:last-child {
+        display: none;
+    }
+    .grid-column-first {
+        display: block;
+    }
+    .central-music-new-products-list-two {
+        margin: 2em 0 0 0;
+    }
+    .central-music-new-products-container-two:first-child {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .central-music-new-product-image-two-0 {
+        background-image: url('../images/central-music-newest-product-0.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 310px;
+        width: 100%;
+    }
+    .central-music-footer-navigation > div {
+        width: 18%;
+    }
+    .central-music-footer-navigation > div:last-child {
+        width: 64%;
+    }
+    .central-music-footer-nav-social ul {
+        width: 20%;
+    }
+    .central-music-new-products-section-two {
+        margin: 4.6em 0;
+    }
+}
